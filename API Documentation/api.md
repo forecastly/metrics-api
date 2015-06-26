@@ -454,7 +454,7 @@ https://api.chartmogul.com/v1/metrics/asp?start-date=2009-01-01&end-date=2009-02
 } 
 ```
 
-## Requesting Customer Data
+## Requesting Customer Data (Coming Soon)
 
 ### /customers/search
 
