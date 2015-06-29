@@ -63,15 +63,15 @@ The following response codes may be returned by the endpoint:
 Returns an array of entries containing all of the key metrics for the specified time period and interval.
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
- 
+
 #### Example Request
 
 ```
@@ -80,7 +80,7 @@ https://api.chartmogul.com/v1/metrics/all?start-date=2009-01-01&end-date=2009-02
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -115,17 +115,17 @@ https://api.chartmogul.com/v1/metrics/all?start-date=2009-01-01&end-date=2009-02
 
 Returns an array of entries containing Annualized Run Rate (ARR) values for the specified time period and filters.
 
-#### Supported Parameters 
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -136,7 +136,7 @@ https://api.chartmogul.com/v1/metrics/arr?start-date=2009-01-01&end-date=2009-02
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -157,18 +157,18 @@ https://api.chartmogul.com/v1/metrics/arr?start-date=2009-01-01&end-date=2009-02
 ### /metrics/mrr
 
 Returns an array of entries containing Monthly Recurring Revenue (MRR) values for the specified time period and filters.
- 
-#### Supported Parameters 
+
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -179,7 +179,7 @@ https://api.chartmogul.com/v1/metrics/mrr?start-date=2009-01-01&end-date=2009-02
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -201,17 +201,17 @@ https://api.chartmogul.com/v1/metrics/mrr?start-date=2009-01-01&end-date=2009-02
 
 Returns an array of entries containing Average Revenue Per Account (ARPA) values for the specified time period and filters.
 
-#### Supported Parameters 
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -222,7 +222,7 @@ https://api.chartmogul.com/v1/metrics/arpa?start-date=2009-01-01&end-date=2009-0
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -244,17 +244,17 @@ https://api.chartmogul.com/v1/metrics/arpa?start-date=2009-01-01&end-date=2009-0
 
 Returns an array of entries containing Customer Lifetime Value (LTV) values for the specified time period and filters.
 
-#### Supported Parameters 
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -265,7 +265,7 @@ https://api.chartmogul.com/v1/metrics/ltv?start-date=2009-01-01&end-date=2009-02
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -287,17 +287,17 @@ https://api.chartmogul.com/v1/metrics/ltv?start-date=2009-01-01&end-date=2009-02
 
 Returns an array of entries containing Customer Count (number of customers) values for the specified time period and filters.
 
-#### Supported Parameters 
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -308,7 +308,7 @@ https://api.chartmogul.com/v1/metrics/customer-count?start-date=2009-01-01&end-d
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -330,17 +330,17 @@ https://api.chartmogul.com/v1/metrics/customer-count?start-date=2009-01-01&end-d
 
 Returns an array of entries containing MRR Churn Rate values for the specified time period and filters.
 
-#### Supported Parameters 
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -351,7 +351,7 @@ https://api.chartmogul.com/v1/metrics/mrr-churn-rate?start-date=2009-01-01&end-d
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -373,17 +373,17 @@ https://api.chartmogul.com/v1/metrics/mrr-churn-rate?start-date=2009-01-01&end-d
 
 Returns an array of entries containing Customer Churn Rate values for the specified time period and filters.
 
-#### Supported Parameters 
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -394,7 +394,7 @@ https://api.chartmogul.com/v1/metrics/customer-churn-rate?start-date=2009-01-01&
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -416,17 +416,17 @@ https://api.chartmogul.com/v1/metrics/customer-churn-rate?start-date=2009-01-01&
 
 Returns an array of entries containing Average Sale Price values for the specified time period and filters.
 
-#### Supported Parameters 
+#### Supported Parameters
 
 
  - `start-date` (Date) (*required*) - The start date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
- 
+
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
- 
+
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
- 
+
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
 #### Example Request
@@ -437,7 +437,7 @@ https://api.chartmogul.com/v1/metrics/asp?start-date=2009-01-01&end-date=2009-02
 
 #### Example Response
 
-```
+```JSON
 {
    "entries":[
       {
@@ -451,7 +451,7 @@ https://api.chartmogul.com/v1/metrics/asp?start-date=2009-01-01&end-date=2009-02
       "previous":88.0,
       "percentage-change":2.2
    }
-} 
+}
 ```
 
 ## Requesting Customer Data (Coming Soon)
@@ -472,7 +472,7 @@ https://api.chartmogul.com/v1/customers/search?email=john@healthyfoodboxes.com
 
 #### Example Response
 
-```
+```JSON
 {
 	"entries":[
 		{
@@ -520,7 +520,3 @@ https://api.chartmogul.com/v1/customers/search?email=john@healthyfoodboxes.com
 	]
 }
 ```
-
-
-
-
