@@ -1,7 +1,5 @@
 # ChartMogul Metrics API
 
-> **IMPORTANT:** The ChartMogul Metrics API is currently in closed beta - you will not have access to the API from your account unless you have been added to the API beta program.
-
 ## Overview
 
 The ChartMogul Metrics API allows you to programmatically access to much of the data you see in your ChartMogul account. You can use this API to consume the revenue data for a specific ChartMogul company, and use this in an external application or system.
