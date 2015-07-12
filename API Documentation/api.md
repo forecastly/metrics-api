@@ -24,7 +24,7 @@ The ChartMogul Metrics API uses [HTTP Basic Authentication](http://en.wikipedia.
 
 If you have access to the API, you can find your API key in the ChartMogul Settings page (click the gear icon in the top right of your account) - then you'll see an API tab:
 
-![Admin - API](/admin-api.jpg?raw=true "Admin API")
+![Admin - API](admin-api.jpg?raw=true "Admin API")
 
 
 
