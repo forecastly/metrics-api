@@ -477,26 +477,26 @@ https://api.chartmogul.com/v1/customers/search?email=bob@examplecompany.com
 {
     "entries":[
         {
-            address: {
-  				address_line1: "First line of address"
-  				address_line2: "Second line of address"
-  				address_zip: "0185128"
-  				city: "Nowhereville"
-  				country: "US"
-  				state: "Alaska"
+            "address": {
+  				"address_line1": "First line of address"
+  				"address_line2": "Second line of address"
+  				"address_zip": "0185128"
+  				"city": "Nowhereville"
+  				"country": "US"
+  				"state": "Alaska"
 			}
-			arr: 24000
-			billing-system-type: "Manual"
-			billing-system-url: null
-			chartmogul-url: "http://chartmogul.com/#customers/25647-Example-Company"
-			currency: "USD"
-			currency-sign: "$"
-			customer-since: "2015-06-09T13:16:00-04:00"
-			email: "bob@examplecompany.com"
-			id: 25647
-			mrr: 2000
-			name: "Example Company"
-			status: "Active"
+			"arr": 24000
+			"billing-system-type": "Manual"
+			"billing-system-url": null
+			"chartmogul-url": "http://chartmogul.com/#customers/25647-Example-Company"
+			"currency": "USD"
+			"currency-sign": "$"
+			"customer-since": "2015-06-09T13:16:00-04:00"
+			"email": "bob@examplecompany.com"
+			"id": 25647
+			"mrr": 2000
+			"name": "Example Company"
+			"status": "Active"
         }
     ]
 }
@@ -522,15 +522,15 @@ https://api.chartmogul.com/v1/customers/{12345}/activities
 {
 	"entries":[
 		{
-			activity-arr: 24000,
-			activity-mrr: 2000,
-			activity-mrr-movement: 2000
-			currency: "USD"
-			currency-sign: "$"
-			date: "2015-06-09T13:16:00-04:00"
-			description: "purchased the Silver Monthly plan (1)"
-			id: 48730
-			type: "new_biz"
+			"activity-arr": 24000,
+			"activity-mrr": 2000,
+			"activity-mrr-movement": 2000
+			"currency": "USD"
+			"currency-sign": "$"
+			"date": "2015-06-09T13:16:00-04:00"
+			"description": "purchased the Silver Monthly plan (1)"
+			"id": 48730
+			"type": "new_biz"
 		}
 	]
 }
@@ -556,15 +556,15 @@ https://api.chartmogul.com/v1/customers/{12345}/activities
 {
 	"entries":[
 		{
-			arpa: 30718.7199565509
-			arr: 5160744.952700544
-			asp: 2762.66666666667
-			customer-churn-rate: 0
-			customers: 14
-			date: "2015-05-01"
-			ltv: 0
-			mrr: 430062.079391712
-			mrr-churn-rate: 5.5
+			"arpa": 30718.7199565509
+			"arr": 5160744.952700544
+			"asp": 2762.66666666667
+			"customer-churn-rate": 0
+			"customers": 14
+			"date": "2015-05-01"
+			"ltv": 0
+			"mrr": 430062.079391712
+			"mrr-churn-rate": 5.5
 		}
 	]
 }
