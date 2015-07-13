@@ -51,6 +51,9 @@ The following response codes may be returned by the endpoint:
 - `/metrics/mrr-churn-rate` - MRR Churn Rate
 - `/metrics/ltv` - Customer Lifetime Value
 - `/customers/search` - Find information for a specific customer
+- `/customers/{id}/subscriptions` - Get a list of subscriptions for a single customer
+- `/customers/{id}/activities` - Get a list of activities for a single customer
+-
 
 
 ## Requesting Metrics Data
@@ -465,7 +468,52 @@ Returns an array of entries containing customer data.
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/customers/search?email=john@healthyfoodboxes.com
+https://api.chartmogul.com/v1/customers/search?email=bob@examplecompany.com
+```
+
+#### Example Response
+
+```JSON
+{
+    "entries":[
+        {
+            address: {
+  				address_line1: "First line of address"
+  				address_line2: "Second line of address"
+  				address_zip: "0185128"
+  				city: "Nowhereville"
+  				country: "US"
+  				state: "Alaska"
+			}
+			arr: 24000
+			billing-system-type: "Manual"
+			billing-system-url: null
+			chartmogul-url: "http://chartmogul.com/#customers/25647-Example-Company"
+			currency: "USD"
+			currency-sign: "$"
+			customer-since: "2015-06-09T13:16:00-04:00"
+			email: "bob@examplecompany.com"
+			id: 25647
+			mrr: 2000
+			name: "Example Company"
+			status: "Active"
+        }
+    ]
+}
+```
+
+### /customers/{id}/activities
+
+Returns an array of entries containing the given customer's recent activities.
+
+#### Supported Parameters
+
+none
+
+#### Example Request
+
+```
+https://api.chartmogul.com/v1/customers/{12345}/activities
 ```
 
 #### Example Response
@@ -474,46 +522,49 @@ https://api.chartmogul.com/v1/customers/search?email=john@healthyfoodboxes.com
 {
 	"entries":[
 		{
-			"company":"Healthy Foodboxes inc.",
-			"owner-email":"john@healthyfoodboxes.com",
-			"customer-since":"2015-06-15",
-			"location":"California, USA",
-			"arr":"3228",
-			"percentage-of-world-mrr":"1.3",
-			"mrr":"269",
-			"status":"active",
-			"billing-system-type":"stripe",
-			"billing-system-url":"https://dashboard.stripe.com/customers/cus_6QtIjg9oa1Awij",
-			"chartmogul-url":"https://app.chartmogul.com/#customers/6652512-Sentry,"
-			"subscriptions":[
-				{
-					"plan":"Gold Enterprise",
-					"quantity": 1,
-					"mrr":"269",
-					"billing-cycle":"monthly",
-					"next-payment":"2015-07-15",
-					"start-date":"2015-06-15",
-					"currency":"usd",
-					"discount":0,
-					"status":"active"
-				}
-			],
-			"activities":[
-				{
-					"description":"purchased the PRO Plan (3,000 active cust.) monthly plan (1)",
-					"activity-mrr":"269",
-					"activity-arr":"3228",
-					"date":"2015-06-15T19:37",
-					"type":"subscribe"
-				},
-				{
-					"description":"upgraded to the Gold Enterprise Plan (10,000 active cust.) monthly plan (1)",
-					"activity-mrr":"529",
-					"activity-arr":"6348",
-					"date":"2015-06-30T18:02",
-					"type":"upgrade"
-				}
-			]
+			activity-arr: 24000,
+			activity-mrr: 2000,
+			activity-mrr-movement: 2000
+			currency: "USD"
+			currency-sign: "$"
+			date: "2015-06-09T13:16:00-04:00"
+			description: "purchased the Silver Monthly plan (1)"
+			id: 48730
+			type: "new_biz"
+		}
+	]
+}
+```
+
+### /customers/{id}/plans
+
+Returns an array of entries containing the given customer's plans.
+
+#### Supported Parameters
+
+none
+
+#### Example Request
+
+```
+https://api.chartmogul.com/v1/customers/{12345}/activities
+```
+
+#### Example Response
+
+```JSON
+{
+	"entries":[
+		{
+			arpa: 30718.7199565509
+			arr: 5160744.952700544
+			asp: 2762.66666666667
+			customer-churn-rate: 0
+			customers: 14
+			date: "2015-05-01"
+			ltv: 0
+			mrr: 430062.079391712
+			mrr-churn-rate: 5.5
 		}
 	]
 }
