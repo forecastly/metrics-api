@@ -463,7 +463,13 @@ Returns an array of entries containing customer data.
 
 #### Supported Parameters
 
-- `email` (String) (*required*) - The email address of the required customer.
+ - `email` (String) (*required*) - The email address of the required customer.
+
+ - `per_page` (Integer) (*optional*) - items per page (default - 200)
+
+ - `page` (Integer) (*optional*) - page number (default - 1)
+
+ - `order` (String) (*optional*) - either `"id"`, `"customer-since"` (default), `"mrr"`. Order can be descending, just add "-" (minus symbol) before field name (for example: `"-id"`. Also order can have multiple columns (for example: `"-id,customer-since"`))
 
 #### Example Request
 
@@ -475,30 +481,121 @@ https://api.chartmogul.com/v1/customers/search?email=bob@examplecompany.com
 
 ```JSON
 {
-    "entries":[
-        {
-            "address": {
-  				"address_line1": "First line of address"
-  				"address_line2": "Second line of address"
-  				"address_zip": "0185128"
-  				"city": "Nowhereville"
-  				"country": "US"
-  				"state": "Alaska"
-			}
-			"arr": 24000
-			"billing-system-type": "Manual"
-			"billing-system-url": null
-			"chartmogul-url": "http://chartmogul.com/#customers/25647-Example-Company"
-			"currency": "USD"
-			"currency-sign": "$"
-			"customer-since": "2015-06-09T13:16:00-04:00"
-			"email": "bob@examplecompany.com"
-			"id": 25647
-			"mrr": 2000
-			"name": "Example Company"
-			"status": "Active"
-        }
-    ]
+  "entries":[
+    {
+      "address": {
+        "address_line1": "First line of address",
+        "address_line2": "Second line of address",
+        "address_zip": "0185128",
+        "city": "Nowhereville",
+        "country": "US",
+        "state": "Alaska",
+      }
+      "arr": 24000,
+      "billing-system-type": "Manual",
+      "billing-system-url": null,
+      "chartmogul-url": "https://chartmogul.com/#customers/25647-Example-Company",
+      "currency": "USD",
+      "currency-sign": "$",
+      "customer-since": "2015-06-09T13:16:00-04:00",
+      "email": "bob@examplecompany.com",
+      "id": 25647,
+      "mrr": 2000,
+      "name": "Example Company",
+      "status": "Active"
+    }
+  ],
+  "per_page": 200,
+  "page: 1,
+  "order": "customer-since"
+}
+```
+
+### /customers/{id}
+
+Returns an array of entries containing customer data.
+
+#### Supported Parameters
+
+ - `id` (Integer) (*required) - customer identifier
+
+#### Example Request
+
+```
+https://api.chartmogul.com/v1/customers/1234
+```
+
+#### Example Response
+
+```JSON
+{
+  "address": {
+    "address_line1": "First line of address",
+    "address_line2": "Second line of address",
+    "address_zip": "0185128",
+    "city": "Nowhereville",
+    "country": "US",
+    "state": "Alaska"
+  },
+  "arr": 24000,
+  "billing-system-type": "Manual",
+  "billing-system-url": null,
+  "chartmogul-url": "https://chartmogul.com/#customers/25647-Example-Company",
+  "currency": "USD",
+  "currency-sign": "$",
+  "customer-since": "2015-06-09T13:16:00-04:00",
+  "email": "bob@examplecompany.com",
+  "id": 25647,
+  "mrr": 2000,
+  "name": "Example Company",
+  "status": "Active"
+}
+```
+
+### /customers/{id}/subscriptions
+
+Returns an array of entries containing the given customer's recent activities.
+
+#### Supported Parameters
+
+ - `id` (Integer) (*required) - customer identifier
+
+ - `per_page` (Integer) (*optional*) - items per page (default - 200)
+
+ - `page` (Integer) (*optional*) - page number (default - 1)
+
+ - `order` (String) (*optional*) - either `"id"`, `"start-date"` (default), `"end-date"`, `"billing-cycle"`, `"billing-cycle-count"`, `"status"`, `"mrr"`, `"type"`, `"type"`, `"type"`. Order can be descending, just add "-" (minus symbol) before field name (for example: `"-id"`. Also order can have multiple columns (for example: `"-id,type"`))
+
+          id: :id, :'start-date' => :date, :'end-date' => :end_date, :'billing-cycle' => :plan_interval,
+          :'billing-cycle-count' => :plan_interval_count, status: :active, mrr: :mrr
+
+
+#### Example Request
+
+```
+https://api.chartmogul.com/v1/customers/12345/subscriptions
+```
+
+#### Example Response
+
+```JSON
+{
+  "entries":[
+    {
+      "activity-arr": 24000,
+      "activity-mrr": 2000,
+      "activity-mrr-movement": 2000,
+      "currency": "USD",
+      "currency-sign": "$",
+      "date": "2015-06-09T13:16:00-04:00",
+      "description": "purchased the Silver Monthly plan (1)",
+      "id": 48730,
+      "type": "new_biz"
+    }
+  ]
+  "per_page": 200,
+  "page: 1,
+  "order": "customer-since"
 }
 ```
 
@@ -508,31 +605,40 @@ Returns an array of entries containing the given customer's recent activities.
 
 #### Supported Parameters
 
-none
+ - `id` (Integer) (*required) - customer identifier
+
+ - `per_page` (Integer) (*optional*) - items per page (default - 200)
+
+ - `page` (Integer) (*optional*) - page number (default - 1)
+
+ - `order` (String) (*optional*) - either `"id"`, `"date"` (default), `"type"`. Order can be descending, just add "-" (minus symbol) before field name (for example: `"-id"`. Also order can have multiple columns (for example: `"-id,type"`))
 
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/customers/{12345}/activities
+https://api.chartmogul.com/v1/customers/12345/activities
 ```
 
 #### Example Response
 
 ```JSON
 {
-	"entries":[
-		{
-			"activity-arr": 24000,
-			"activity-mrr": 2000,
-			"activity-mrr-movement": 2000
-			"currency": "USD"
-			"currency-sign": "$"
-			"date": "2015-06-09T13:16:00-04:00"
-			"description": "purchased the Silver Monthly plan (1)"
-			"id": 48730
-			"type": "new_biz"
-		}
-	]
+  "entries":[
+    {
+      "activity-arr": 24000,
+      "activity-mrr": 2000,
+      "activity-mrr-movement": 2000,
+      "currency": "USD",
+      "currency-sign": "$",
+      "date": "2015-06-09T13:16:00-04:00",
+      "description": "purchased the Silver Monthly plan (1)",
+      "id": 48730,
+      "type": "new_biz"
+    }
+  ]
+  "per_page": 200,
+  "page: 1,
+  "order": "customer-since"
 }
 ```
 
