@@ -53,7 +53,6 @@ The following response codes may be returned by the endpoint:
 - `/customers/search` - Find information for a specific customer
 - `/customers/{id}/subscriptions` - Get a list of subscriptions for a single customer
 - `/customers/{id}/activities` - Get a list of activities for a single customer
--
 
 
 ## Requesting Metrics Data
