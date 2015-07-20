@@ -22,7 +22,7 @@ The ChartMogul Metrics API uses [HTTP Basic Authentication](http://en.wikipedia.
 
 **Where's my API key?**
 
-You can find your API key in the ChartMogul Admin pages (click the gear icon in the top right of your account - you need to be an admin on your account) - then you'll see an API tab:
+You can find your API key in the ChartMogul [Admin pages](https://app.chartmogul.com/#admin/api) (click the gear icon in the top right of your account - you need to be an admin on your account) - then you'll see an API tab:
 
 ![Admin - API](admin-api.jpg?raw=true "Admin API")
 
@@ -69,7 +69,7 @@ Returns an array of entries containing all of the key metrics for the specified 
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -125,7 +125,7 @@ Returns an array of entries containing Annualized Run Rate (ARR) values for the 
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -168,7 +168,7 @@ Returns an array of entries containing Monthly Recurring Revenue (MRR) values fo
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -211,7 +211,7 @@ Returns an array of entries containing Average Revenue Per Account (ARPA) values
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -254,7 +254,7 @@ Returns an array of entries containing Customer Lifetime Value (LTV) values for 
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -297,7 +297,7 @@ Returns an array of entries containing Customer Count (number of customers) valu
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -340,7 +340,7 @@ Returns an array of entries containing MRR Churn Rate values for the specified t
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -383,7 +383,7 @@ Returns an array of entries containing Customer Churn Rate values for the specif
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
@@ -426,7 +426,7 @@ Returns an array of entries containing Average Sale Price values for the specifi
 
  - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
 
- - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](ISO 3166-1) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
+ - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
  - `plans` (String) - A comma-separated list of plan names (as configured in your ChartMogul account) to filter the results to. Note that spaces must be url-encoded and the names are case-sensitive, e.g. `"Silver%20plan", "Gold%20plan", "Enterprise%20plan"`.
 
