@@ -76,8 +76,9 @@ Returns an array of entries containing all of the key metrics for the specified 
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/all?start-date=2009-01-01&end-date=2009-02-05
+https://api.chartmogul.com/v1/metrics/all?start-date=2015-06-01&end-date=2015-07-05
 ```
+[Try it](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/all?start-date=2015-06-01&end-date=2015-07-05).
 
 #### Example Response
 
@@ -132,8 +133,9 @@ Returns an array of entries containing Annualized Run Rate (ARR) values for the 
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/arr?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/arr?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US
 ```
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/arr?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US).
 
 #### Example Response
 
@@ -175,8 +177,9 @@ Returns an array of entries containing Monthly Recurring Revenue (MRR) values fo
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/mrr?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/mrr?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US
 ```
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/mrr?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US).
 
 #### Example Response
 
@@ -218,8 +221,9 @@ Returns an array of entries containing Average Revenue Per Account (ARPA) values
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/arpa?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/arpa?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US
 ```
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/arpa?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US).
 
 #### Example Response
 
@@ -261,8 +265,10 @@ Returns an array of entries containing Customer Lifetime Value (LTV) values for 
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/ltv?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/ltv?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US
 ```
+
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/ltv?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US).
 
 #### Example Response
 
@@ -304,8 +310,10 @@ Returns an array of entries containing Customer Count (number of customers) valu
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/customer-count?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/customer-count?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US
 ```
+
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/customer-count?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US).
 
 #### Example Response
 
@@ -347,8 +355,9 @@ Returns an array of entries containing MRR Churn Rate values for the specified t
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/mrr-churn-rate?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/mrr-churn-rate?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US
 ```
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/mrr-churn-rate?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US)
 
 #### Example Response
 
@@ -390,8 +399,9 @@ Returns an array of entries containing Customer Churn Rate values for the specif
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/customer-churn-rate?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/customer-churn-rate?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US
 ```
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/customer-churn-rate?start-date=2015-01-01&end-date=2015-02-05&interval=day&geo=US)
 
 #### Example Response
 
@@ -424,7 +434,7 @@ Returns an array of entries containing Average Sale Price values for the specifi
 
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
 
- - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
+ - `interval` (String) - either `"month"` (default), `"quarter"`
 
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
@@ -433,8 +443,9 @@ Returns an array of entries containing Average Sale Price values for the specifi
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/metrics/asp?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+https://api.chartmogul.com/v1/metrics/asp?start-date=2015-01-01&end-date=2015-02-05&interval=month&geo=US
 ```
+[Try It](https://41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875@api.chartmogul.com/v1/metrics/asp?start-date=2015-01-01&end-date=2015-02-05&interval=month&geo=US)
 
 #### Example Response
 
@@ -513,7 +524,7 @@ none
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/customers/{12345}/activities
+https://api.chartmogul.com/v1/customers/12345/activities
 ```
 
 #### Example Response
@@ -547,7 +558,7 @@ none
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/customers/{12345}/activities
+https://api.chartmogul.com/v1/customers/12345/activities
 ```
 
 #### Example Response
