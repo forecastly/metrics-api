@@ -256,7 +256,7 @@ Returns an array of entries containing Customer Lifetime Value (LTV) values for 
 
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
 
- - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
+ - `interval` (String) - `"month"` (default)
 
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
@@ -346,7 +346,7 @@ Returns an array of entries containing MRR Churn Rate values for the specified t
 
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
 
- - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
+ - `interval` (String) - `"month"` (default).
 
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
@@ -390,7 +390,7 @@ Returns an array of entries containing Customer Churn Rate values for the specif
 
  - `end-date` (Date) (*required*) - The end date of the required period of data. An [ISO-8601](http://en.wikipedia.org/wiki/ISO_8601) formatted date, e.g. `"2015-05-12"`
 
- - `interval` (String) - either `"day"` (default), `"week"`, `"month"`, `"quarter"`
+ - `interval` (String) - `"month"` (default).
 
  - `geo` (String) - A comma-separated list of [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) formatted country codes to filter the results to, e.g. `"US","UK","DE"`.
 
