@@ -4,7 +4,7 @@
 
 ## Overview
 
-The ChartMogul Metrics API allows you to programmatically access to much of the data you see in your ChartMogul account. You can use this API to consume the revenue data for a specific ChartMogul company, and use this in an external application or system.
+The ChartMogul Metrics API allows you to programmatically access much of the data you see in your ChartMogul account. You can consume the revenue data for your whole account or a specific customer, and use this in an external application or system.
 
 The API supports [Cross-origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) to allow you to consume it from a clientside application (However be careful to never expose your API key in any clientside code).
 
