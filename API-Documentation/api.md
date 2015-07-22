@@ -1,7 +1,5 @@
 # ChartMogul Metrics API
 
-![API - Header](https://chartmogul.com/wp-content/uploads/2015/07/metrics-api-header.png "API image")
-
 ## Overview
 
 The ChartMogul Metrics API allows you to programmatically access much of the data you see in your ChartMogul account. You can consume the revenue data for your whole account or a specific customer, and use this in an external application or system.
