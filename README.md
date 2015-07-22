@@ -1,6 +1,6 @@
 # metrics-api
 
-![API - Header](https://chartmogul.com/wp-content/uploads/2015/07/metrics-api-header.png "API image")
+[![API - Header](https://chartmogul.com/wp-content/uploads/2015/07/metrics-api-header.png "API image")](/API-Documentation/api.md)
 
 The ChartMogul Metrics API gives you access to all the subscription metrics from your ChartMogul account. View the [documentation here](/API-Documentation/api.md).
 
