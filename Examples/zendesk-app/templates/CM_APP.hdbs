@@ -1,0 +1,78 @@
+<div class="cm-app">
+
+    <section class="cm-customer">
+
+        <h1 class="cm-customer-name">
+            <a href="{{user.chartmogul-url}}" target="blank_" title="{{user.company}}">
+                {{user.company}}
+            </a>
+        </h1>
+
+        <p class="cm-customer-since">
+            <span class="cm-customer-status {{user.status}}">{{user.status}}</span> |
+
+            {{#if user.billing-system-url}}
+                <a href="{{user.billing-system-url}}" target="blank_">{{user.billing-system-type}}</a>
+            {{else}}
+                {{user.billing-system-type}}
+            {{/if}}
+
+             | Customer since {{user.customer-since}}
+        </p>
+    </section>
+
+    <section class="cm-metrics">
+        <div class="cm-metrics-mrr">
+            <h2 class="cm-metrics-value">
+                <span class="currency">{{user.currency}}</span>{{user.mrr}}
+            </h2>
+            <span class="cm-metrics-label">MRR</span>
+        </div>
+
+        <div class="cm-metrics-arr">
+            <h2 class="cm-metrics-value">
+                <span class="currency">{{user.currency}}</span>{{user.arr}}
+            </h2>
+            <span class="cm-metrics-label">ARR</span>
+        </div>
+    </section>
+
+    {{#if user.subs }}
+        <section class="cm-subscriptions">
+            <h3 class="cm-title">Subscriptions</h3>
+            <table>
+                {{#user.subs}}
+                    <tr>
+                        <td>
+                            <p class="plan"><span class="cm-status {{status}}" title="{{status}}"></span> {{plan}}</p>
+                        </td>
+                        <td>x{{quantity}}</td>
+                        <td>{{currency}}{{mrr}} MRR</td>
+                    </tr>
+                {{/user.subs}}
+            </table>
+        </section>
+    {{/if}}
+
+    {{#if user.events }}
+        <section class="cm-activities">
+            <h3 class="cm-title">Recent Activity</h3>
+            <table>
+                {{#user.events}}
+                    <tr>
+                        <td>{{type}}</td>
+                        <td>{{currency}}{{mrr}} MRR</td>
+                        <td>{{date}}</td>
+                    </tr>
+                {{/user.events}}
+            </table>
+        </section>
+    {{/if}}
+
+</div>
+
+<footer class="cm-footer">
+    <a href="{{user.chartmogul-url}}" target="blank">
+  View in ChartMogul
+</a>
+</footer>

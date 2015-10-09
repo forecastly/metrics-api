@@ -1,0 +1,17 @@
+{
+  "app": {
+    "parameters": {
+      "apiKey": { "label": { "value": "Secret Key", "title": "Secret Key" }, "helpText": { "value": "Find your Secret Key in your ChartMogul settings page: http://app.chartmogul.com/#admin/api", "title": "Find your Secret Key in your ChartMogul settings page: http://app.chartmogul.com/#admin/api" } },
+      "token": { "label": { "value": "Account Token", "title": "Account Token" }, "helpText": { "value": "Find your Account Token in your ChartMogul settings page: http://app.chartmogul.com/#admin/api", "title": "Find your Account Token in your ChartMogul settings page: http://app.chartmogul.com/#admin/api" } }
+    },
+    "package": "ChartMogul",
+    "description": {
+      "value": "app description value",
+      "title": "app description title"
+    },
+    "name": {
+      "value": "ChartMogul SaaS Metrics",
+      "title": "ChartMogul"
+    }
+  }
+}

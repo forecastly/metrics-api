@@ -1,0 +1,136 @@
+.small, .cm-app .cm-customer-since, .cm-app .cm-subscriptions table td,
+.cm-app .cm-activities table td, .cm-app .cm-subscriptions table td .plan,
+.cm-app .cm-activities table td .plan {
+  font-size: 10px; }
+
+.large, .cm-app .cm-customer-name {
+  font-size: 17px; }
+
+.huge, .cm-app .cm-metrics-value {
+  font-size: 25px; }
+
+.light, .cm-app .cm-metrics-label, .cm-app .cm-title, .cm-failed {
+  color: #AAAAAA; }
+
+.dark, .cm-app .cm-metrics-value, .cm-app .cm-subscriptions table td .plan,
+.cm-app .cm-activities table td .plan, .cm-app .cm-subscriptions table td:first-child,
+.cm-app .cm-activities table td:first-child {
+  color: #585858; }
+
+.block-inline, .cm-app .cm-customer-name, .cm-app .cm-status {
+  display: inline-block; }
+
+.success {
+  color: #73C070; }
+
+.danger {
+  color: #d9534f; }
+
+.truncate, .cm-app .cm-customer-name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.clearfix:before, .cm-app .cm-metrics:before, .clearfix:after, .cm-app .cm-metrics:after {
+  content: " ";
+  display: table; }
+.clearfix:after, .cm-app .cm-metrics:after {
+  clear: both; }
+
+.cm-app,
+.cm-app h1,
+.cm-app h2,
+.cm-app h3,
+.cm-app h4,
+.cm-app p {
+  color: #8C8C8C;
+  font-size: 13px;
+  margin: 0;
+  padding: 0; }
+.cm-app h1, .cm-app h2, .cm-app h3, .cm-app h4 {
+  line-height: 1.4; }
+.cm-app section {
+  margin-bottom: 20px; }
+.cm-app .cm-customer-status.Active {
+  color: #73C070; }
+.cm-app .cm-customer-status.Inactive {
+  color: #d9534f; }
+.cm-app .cm-metrics-mrr,
+.cm-app .cm-metrics-arr {
+  display: block;
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 10px;
+  text-align: center; }
+  .cm-app .cm-metrics-mrr, .cm-app .cm-metrics-mrr:before, .cm-app .cm-metrics-mrr:after,
+  .cm-app .cm-metrics-arr,
+  .cm-app .cm-metrics-arr:before,
+  .cm-app .cm-metrics-arr:after {
+    box-sizing: border-box; }
+.cm-app .cm-metrics-mrr {
+  border-right: 1px dotted #C8C8C8; }
+.cm-app .cm-metrics-value {
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -0.05em; }
+.cm-app .cm-metrics-label {
+  font-size: 13px;
+  display: block;
+  margin-top: 10px; }
+.cm-app .cm-subscriptions table,
+.cm-app .cm-activities table {
+  width: 100%; }
+  .cm-app .cm-subscriptions table td,
+  .cm-app .cm-activities table td {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: 1px solid #F4F5F5;
+    vertical-align: middle; }
+    .cm-app .cm-subscriptions table td .plan,
+    .cm-app .cm-activities table td .plan {
+      padding-left: 10px;
+      position: relative; }
+      .cm-app .cm-subscriptions table td .plan .cm-status,
+      .cm-app .cm-activities table td .plan .cm-status {
+        position: absolute;
+        left: 0;
+        top: 6px; }
+    .cm-app .cm-subscriptions table td:first-child,
+    .cm-app .cm-activities table td:first-child {
+      text-align: left;
+      width: 45%; }
+    .cm-app .cm-subscriptions table td:nth-child(2),
+    .cm-app .cm-activities table td:nth-child(2) {
+      width: 30%; }
+    .cm-app .cm-subscriptions table td:last-child,
+    .cm-app .cm-activities table td:last-child {
+      text-align: right;
+      width: 25%; }
+.cm-app .cm-status {
+  width: 5px;
+  height: 5px;
+  margin-bottom: 2px;
+  margin-right: 2px; }
+  .cm-app .cm-status.Active {
+    background: #73C070;
+    border-radius: 50%; }
+  .cm-app .cm-status.Inactive {
+    background: #d9534f; }
+.cm-app .cm-title {
+  margin-bottom: 5px;
+  font-weight: normal; }
+
+.cm-footer {
+  text-align: center;
+  border-top: 1px dotted #C8C8C8;
+  margin-top: 30px; }
+
+.cm-failed {
+  text-align: center; }
+  .cm-failed span {
+    font-weight: bold; }
+
+/*# sourceMappingURL=app.css.map */

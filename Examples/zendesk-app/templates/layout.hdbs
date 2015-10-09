@@ -1,0 +1,10 @@
+<header>
+    <a href="https://app.chartmogul.com/" target="blank_">
+        <span class="logo"></span>
+    </a>
+    <h3>{{setting "name"}}</h3>
+</header>
+
+<section data-main>
+
+</section>

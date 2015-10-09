@@ -1,0 +1,1 @@
+<p class="cm-failed">Sorry, we couldn't find <span>{{user.name}}</span> in your ChartMogul account.</p>
