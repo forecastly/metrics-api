@@ -1,4 +1,4 @@
-#    Extremely simple ChatMogul read-only API wrapper
+#    Extremely simple ChartMogul read-only API wrapper
 #    https://github.com/bencer/python-chartmogul
 #    Copyright (C) 2015 Jorge Salamero <bencer@cauterized.net>
 #
