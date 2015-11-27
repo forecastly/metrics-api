@@ -656,6 +656,8 @@ curl https://api.chartmogul.com/v1/customers/7283428/activities \
 
 ### /customers/{id}/plans
 
+:warning: Currently not supported. See https://github.com/chartmogul/metrics-api/issues/6.
+
 Returns an array of entries containing the given customer's plans.
 
 #### Supported Parameters
