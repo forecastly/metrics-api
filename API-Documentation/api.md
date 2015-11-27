@@ -78,6 +78,19 @@ Returns an array of entries containing all of the key metrics for the specified 
 https://api.chartmogul.com/v1/metrics/all?start-date=2009-01-01&end-date=2009-02-05
 ```
 
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/all \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=month \
+-d start-date=2015-01-01 \
+-d end-date=2015-11-24 \
+-d geo=GB \
+-d plan="PRO Plan" 
+```
+
 #### Example Response
 
 ```JSON
@@ -134,6 +147,18 @@ Returns an array of entries containing Annualized Run Rate (ARR) values for the 
 https://api.chartmogul.com/v1/metrics/arr?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
 ```
 
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/arr \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=month \
+-d start-date=2015-01-01 \
+-d end-date=2015-11-24 \
+-d geo=US
+```
+
 #### Example Response
 
 ```JSON
@@ -175,6 +200,17 @@ Returns an array of entries containing Monthly Recurring Revenue (MRR) values fo
 
 ```
 https://api.chartmogul.com/v1/metrics/mrr?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+```
+
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/mrr \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=week \
+-d start-date=2015-01-01 \
+-d end-date=2015-11-01
 ```
 
 #### Example Response
@@ -220,6 +256,17 @@ Returns an array of entries containing Average Revenue Per Account (ARPA) values
 https://api.chartmogul.com/v1/metrics/arpa?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
 ```
 
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/arpa \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=week \
+-d start-date=2015-01-01 \
+-d end-date=2015-11-01
+```
+
 #### Example Response
 
 ```JSON
@@ -261,6 +308,17 @@ Returns an array of entries containing Customer Lifetime Value (LTV) values for 
 
 ```
 https://api.chartmogul.com/v1/metrics/ltv?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+```
+
+Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/ltv \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=week \
+-d start-date=2015-01-01 \
+-d end-date=2015-11-01
 ```
 
 #### Example Response
@@ -306,6 +364,17 @@ Returns an array of entries containing Customer Count (number of customers) valu
 https://api.chartmogul.com/v1/metrics/customer-count?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
 ```
 
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/customer-count \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=week \
+-d start-date=2015-07-01 \
+-d end-date=2015-11-01
+```
+
 #### Example Response
 
 ```JSON
@@ -347,6 +416,17 @@ Returns an array of entries containing MRR Churn Rate values for the specified t
 
 ```
 https://api.chartmogul.com/v1/metrics/mrr-churn-rate?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
+```
+
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/mrr-churn-rate \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=week \
+-d start-date=2015-10-01 \
+-d end-date=2015-11-01
 ```
 
 #### Example Response
@@ -392,6 +472,17 @@ Returns an array of entries containing Customer Churn Rate values for the specif
 https://api.chartmogul.com/v1/metrics/customer-churn-rate?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
 ```
 
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/customer-churn-rate \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=week \
+-d start-date=2015-10-01 \
+-d end-date=2015-11-01
+```
+
 #### Example Response
 
 ```JSON
@@ -435,6 +526,17 @@ Returns an array of entries containing Average Sale Price values for the specifi
 https://api.chartmogul.com/v1/metrics/asp?start-date=2009-01-01&end-date=2009-02-05&interval=days&geo=US
 ```
 
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/metrics/asp \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875 \
+-d interval=week \
+-d start-date=2015-10-01 \
+-d end-date=2015-11-01
+```
+
 #### Example Response
 
 ```JSON
@@ -468,6 +570,14 @@ Returns an array of entries containing customer data.
 
 ```
 https://api.chartmogul.com/v1/customers/search?email=bob@examplecompany.com
+```
+
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/customers/search?email=bob@examplecompany.com \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875
 ```
 
 #### Example Response
@@ -515,6 +625,15 @@ none
 https://api.chartmogul.com/v1/customers/{12345}/activities
 ```
 
+
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/customers/7283428/activities \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875
+```
+
 #### Example Response
 
 ```JSON
@@ -546,7 +665,15 @@ none
 #### Example Request
 
 ```
-https://api.chartmogul.com/v1/customers/{12345}/activities
+https://api.chartmogul.com/v1/customers/{12345}/plans
+```
+
+#### Example cURL Request
+
+```
+curl https://api.chartmogul.com/v1/customers/7283428/plans \
+-X GET \
+-u 41e70131daaf56b516f32a38c8b8628d:187583e8b9d77eadae8c6a1db83f7875
 ```
 
 #### Example Response
