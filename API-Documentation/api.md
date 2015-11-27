@@ -587,24 +587,24 @@ curl https://api.chartmogul.com/v1/customers/search?email=bob@examplecompany.com
     "entries":[
         {
             "address": {
-  				"address_line1": "First line of address"
-  				"address_line2": "Second line of address"
-  				"address_zip": "0185128"
-  				"city": "Nowhereville"
-  				"country": "US"
+  				"address_line1": "First line of address",
+  				"address_line2": "Second line of address",
+  				"address_zip": "0185128",
+  				"city": "Nowhereville",
+  				"country": "US",
   				"state": "Alaska"
-			}
-			"arr": 24000
-			"billing-system-type": "Manual"
-			"billing-system-url": null
-			"chartmogul-url": "http://chartmogul.com/#customers/25647-Example-Company"
-			"currency": "USD"
-			"currency-sign": "$"
-			"customer-since": "2015-06-09T13:16:00-04:00"
-			"email": "bob@examplecompany.com"
-			"id": 25647
-			"mrr": 2000
-			"name": "Example Company"
+			},
+			"arr": 24000,
+			"billing-system-type": "Manual",
+			"billing-system-url": null,
+			"chartmogul-url": "http://chartmogul.com/#customers/25647-Example-Company",
+			"currency": "USD",
+			"currency-sign": "$",
+			"customer-since": "2015-06-09T13:16:00-04:00",
+			"email": "bob@examplecompany.com",
+			"id": 25647,
+			"mrr": 2000,
+			"name": "Example Company",
 			"status": "Active"
         }
     ]
@@ -642,12 +642,12 @@ curl https://api.chartmogul.com/v1/customers/7283428/activities \
 		{
 			"activity-arr": 24000,
 			"activity-mrr": 2000,
-			"activity-mrr-movement": 2000
-			"currency": "USD"
-			"currency-sign": "$"
-			"date": "2015-06-09T13:16:00-04:00"
-			"description": "purchased the Silver Monthly plan (1)"
-			"id": 48730
+			"activity-mrr-movement": 2000,
+			"currency": "USD",
+			"currency-sign": "$",
+			"date": "2015-06-09T13:16:00-04:00",
+			"description": "purchased the Silver Monthly plan (1)",
+			"id": 48730,
 			"type": "new_biz"
 		}
 	]
